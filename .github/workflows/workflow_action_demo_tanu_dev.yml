@@ -1,4 +1,4 @@
-name: workflow_git_action_demo
+name: workflow_action_demo_tanu_dev
 
 on:
   push:
