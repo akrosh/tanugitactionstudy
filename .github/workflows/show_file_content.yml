@@ -1,0 +1,16 @@
+name: show_file_value
+on:
+  workflow_dispatch:
+
+jobs:
+  showfilecontent:
+    runs-on: uubuntu-latest
+    steps:
+      - name: checkout_repo
+        use: actions/checkout@v4
+
+      - name: list_file
+        run: ls -lrt
+
+      - name: display_file_content
+        run: cat simple.txt
