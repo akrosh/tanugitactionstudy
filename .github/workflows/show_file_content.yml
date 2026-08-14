@@ -7,7 +7,7 @@ jobs:
     runs-on: uubuntu-latest
     steps:
       - name: checkout_repo
-        use: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: list_file
         run: ls -lrt
