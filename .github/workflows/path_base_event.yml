@@ -1,4 +1,4 @@
-name: workflow_action_demo_tanu_dev
+name: path_base_trigger_tanu_dev
 
 on:
   push:
