@@ -1,10 +1,8 @@
 name: eventWorkflow
 
 on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: main
+  schedule:
+    - cron: "3 * * * *"
 jobs:
   even_demo:
     runs-on: ubuntu-latest
