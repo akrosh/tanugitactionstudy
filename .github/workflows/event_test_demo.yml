@@ -1,4 +1,4 @@
-name: eventWorkflow_schedule
+name: eventWorkflow_schedule1
 
 on:
   schedule:
