@@ -2,7 +2,7 @@ name: eventWorkflow
 
 on:
   schedule:
-    - cron: "3 * * * *"
+    - cron: "7 11 * * *"
 jobs:
   even_demo:
     runs-on: ubuntu-latest
