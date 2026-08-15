@@ -3,6 +3,8 @@ name: eventWorkflow
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: main
 jobs:
   even_demo:
     runs-on: ubuntu-latest
