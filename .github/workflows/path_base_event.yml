@@ -3,7 +3,7 @@ name: path_base_trigger_tanu_dev
 on:
   push:
     paths: 
-      - 'src'
+      - 'src/**'
   workflow_dispatch:   #runs the workflow manually
 
 jobs:
