@@ -1,0 +1,30 @@
+name: workflow_action_demo_tanu_dev
+
+on:
+  push:
+    paths: 
+      - "src/**"
+  workflow_dispatch:   #runs the workflow manually
+
+jobs:
+  basic-demo_1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say Hello
+        run: echo "Hello from Tanuja Technologies"
+      - name: today date
+        run: date
+      - name: Show Linux version
+        run: uname -a
+
+      - name: List current directory
+        run: ls -ltr
+
+      - name: Print current user
+        run: whoami
+
+      - name: Print date and time
+        run: date
+      - name: print hostname
+        run: hostname
