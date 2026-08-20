@@ -17,4 +17,4 @@ jobs:
       - name: trigger_workflow_java_mutiversion
         run: |
               echo "Testing on ${{matrix.os}} with jaa version ${{matrix.java}} " 
-              echo ${{matrix.message}}
+             
