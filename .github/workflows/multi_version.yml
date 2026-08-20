@@ -1,0 +1,13 @@
+name: multi-version
+
+on:
+  workflow_dispatch: 
+jobs:
+  muti-version:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        java: [8,11,17]
+    steps:
+      - name: trigger_workflow_java_mutiversion
+        run: echo "Testing on ${{matrix.java}}"
