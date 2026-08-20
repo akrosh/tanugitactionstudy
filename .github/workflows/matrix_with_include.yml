@@ -1,0 +1,20 @@
+name: matrix_with_include
+
+on:
+  workflow_dispatch: 
+jobs:
+  muti-version:
+    runs-on: ${{matrix.os}}
+    strategy:
+      matrix:
+        os: [ubuntu-latest,windows-latest]
+        java: [8,11,17]
+        include:
+          - os: ubuntu-latest
+            java: 19
+            message: optimized build
+    steps:
+      - name: trigger_workflow_java_mutiversion
+        run: |
+              echo "Testing on ${{matrix.os}} with jaa version ${{matrix.java}} " 
+              echo ${{matrix.message}}
