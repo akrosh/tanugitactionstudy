@@ -1,4 +1,4 @@
-name: eventWorkflow
+name: multi-os
 
 on:
   workflow_dispatch: 
