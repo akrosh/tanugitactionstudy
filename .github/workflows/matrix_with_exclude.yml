@@ -12,7 +12,6 @@ jobs:
         exclude:
           - os: ubuntu-latest
             java: 17
-            message: optimized build
     steps:
       - name: trigger_workflow_java_mutiversion
         run: |
